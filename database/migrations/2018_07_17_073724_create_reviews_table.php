@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,10 +15,10 @@ class CreateReviewsTable extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('product_id')->unsigned()->index();
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->integer('prod_id')->unsigned()->index();
+            $table->foreign('prod_id')->references('id')->on('products')->onDelete('cascade');
             $table->string('customer');
-            $table->string('review');
+            $table->text('review');
             $table->integer('star');
             $table->timestamps();
         });
