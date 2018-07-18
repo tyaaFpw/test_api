@@ -12,6 +12,7 @@ class Review extends Seeder
      */
     public function run()
     {
-        //
+    	// $prodIds = Product::all()->pluck('id')->toArray();
+    	// 'prod_id' => $faker->randomElement(prodIds);
     }
 }
