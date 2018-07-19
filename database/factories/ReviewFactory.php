@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Model\Review::class, function (Faker $faker) {
     return [
-    	'prod_id' => function(){
+    	'product_id' => function(){
     	// 	// return Product::all()->random();
     	// 	// $prodIds = User::all()->pluck('id')->toArray();
     	// 	// 'prod_id' => $faker->randomElement($prodIds) 
